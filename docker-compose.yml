@@ -15,7 +15,9 @@ services:
             # POSTGRES_DB: smart-brain-docker
             # POSTGRES_HOST: postgres
             POSTGRES_URI: ${POSTGRES_URI}
+            REDIS_URI: ${REDIS_URI}
             CLARIFAI_API_KEY: ${CLARIFAI_API_KEY}
+            JWT_SECRET: ${JWT_SECRET}
         ports:
             - "3001:3001"
         # allows us to access the file system where the docker container is running
@@ -36,3 +38,9 @@ services:
         build: ./postgres
         ports:
             - "5432:5432"
+
+    # Redis
+    redis:
+        image: redis
+        ports:
+            - "6379:6379"
