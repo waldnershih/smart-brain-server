@@ -26,7 +26,7 @@ const handleSignin = (db, bcrypt, req, res) => {
 				Promise.reject("wrong credentials");
 			}
 		})
-		.catch((err) => Promise.reject("wrong credentials"));
+		.catch((err) => Promise.reject("something went wrong"));
 };
 
 const getAuthTokenId = (req, res) => {

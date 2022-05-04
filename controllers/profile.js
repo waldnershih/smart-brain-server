@@ -20,8 +20,8 @@ const handleProfileUpdate = (req, res, db) => {
 		.where({ id })
 		.update({
 			name,
-			// age,
-			// pet,
+			age,
+			pet,
 		})
 		.then((resp) => {
 			if (resp) {
