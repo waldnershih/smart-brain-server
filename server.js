@@ -40,7 +40,7 @@ app.post("/register", (req, res) => {
 app.get("/profile/:id", auth.requireAuth, (req, res) => {
 	profile.handleProfileGet(req, res, db);
 });
-app.post("/profile/:id", auth.requireAuth, (req, res) => {
+app.put("/profile/:id", auth.requireAuth, (req, res) => {
 	profile.handleProfileUpdate(req, res, db);
 });
 app.put("/image", auth.requireAuth, (req, res) => {
