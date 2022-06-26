@@ -1,13 +1,9 @@
-# SmartBrain-api
+# SmartBrain-API
 
-Final project for ZTM course
+## Arch
 
-1. Clone this repo
-2. Run `npm install`
-3. Run `npm start`
-4. You must add your own API key in the `controllers/image.js` file to connect to Clarifai API
-5. Add your own database credentials to `server.js` line 12
+-   App: [SmartBrain-Client](https://github.com/waldnershih/smart-brain-client)
+-   Server: [SmartBrain-API](https://github.com/waldnershih/smart-brain-server)
+-   Lambda: [SmartBrain-Serverless](https://github.com/waldnershih/smart-brain-serverless)
 
-You can grab Clarifai API key [here](https://www.clarifai.com/)
-
-\*\* Make sure you use postgreSQL instead of mySQL for this code base.
+## Final project for ZTM course
